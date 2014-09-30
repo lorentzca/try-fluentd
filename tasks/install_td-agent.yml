@@ -1,0 +1,4 @@
+---
+
+- name: install td-agent
+  shell: curl -fsSL http://toolbelt.treasuredata.com/sh/install-redhat.sh | sh

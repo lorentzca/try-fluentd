@@ -1,0 +1,5 @@
+- hosts: try-fluentd
+  user: vagrant
+  sudo: yes
+  tasks:
+    - include: tasks/install_td-agent.yml
