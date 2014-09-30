@@ -2,3 +2,9 @@
 
 - name: install td-agent
   shell: curl -fsSL http://toolbelt.treasuredata.com/sh/install-redhat.sh | sh
+
+- name: td-agent service
+  service: name=td-agent state=started
+
+- name: enable boot
+  service: name=td-agent enabled=yes
